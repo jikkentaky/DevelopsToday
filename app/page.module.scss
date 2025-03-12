@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  gap: $spacing-xl;
+  max-width: $breakpoint-xl;
+  margin: $spacing-xl auto;
+  padding: 0 $spacing-md;
+}
+
+.sidebar {
+  flex: 0 0 300px;
+}
+
+.content {
+  flex: 1;
+}
+
+@media (max-width: $breakpoint-md) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    flex: none;
+    width: 100%;
+  }
+}
