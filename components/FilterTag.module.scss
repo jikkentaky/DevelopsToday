@@ -1,0 +1,16 @@
+.tag {
+  display: inline-block;
+  padding: $spacing-xs $spacing-sm;
+  background-color: $secondary;
+  color: $primary;
+  border-radius: $border-radius-sm;
+  font-size: 0.875rem;
+  margin-right: $spacing-sm;
+  margin-bottom: $spacing-sm;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  
+  &:hover {
+    background-color: $secondary-dark;
+  }
+} 

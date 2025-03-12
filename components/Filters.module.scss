@@ -1,0 +1,102 @@
+.filters {
+  background-color: $card-bg;
+  padding: $spacing-xl;
+  border-radius: $border-radius-md;
+  box-shadow: $box-shadow;
+  margin-bottom: $spacing-xl;
+  
+  h2 {
+    margin-bottom: $spacing-xs;
+    font-size: 1.5rem;
+    color: $text-color;
+  }
+}
+
+.filterInfo {
+  margin-bottom: $spacing-lg;
+  font-size: 0.9rem;
+  color: $text-color;
+  line-height: 1.4;
+  padding: 0.75rem;
+  background-color: $bg-color;
+  border-radius: $border-radius-sm;
+  border-left: 3px solid $primary;
+}
+
+.filterGroup {
+  margin-bottom: $spacing-md;
+  transition: opacity 0.3s ease;
+  
+  label {
+    display: block;
+    margin-bottom: $spacing-sm;
+    font-weight: 500;
+    color: $text-color;
+  }
+}
+
+.filterGroupInactive {
+  @extend .filterGroup;
+  opacity: 0.6;
+  
+  label {
+    color: $text-color;
+  }
+}
+
+.select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid $bg-color;
+  border-radius: $border-radius-sm;
+  background-color: $bg-color;
+  font-size: 1rem;
+  color: $text-color;
+  cursor: pointer;
+  
+  &:focus {
+    outline: none;
+    border-color: $primary;
+    box-shadow: 0 0 0 2px rgba($primary, 0.2);
+  }
+  
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $bg-color;
+    color: $text-color;
+    opacity: 0.5;
+  }
+  
+  option {
+    padding: $spacing-sm;
+  }
+}
+
+.resetButton {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: $bg-color;
+  color: $text-color;
+  border: 1px solid $bg-color;
+  border-radius: $border-radius-sm;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: $spacing-md;
+  
+  &:hover {
+    background-color: darken($bg-color, 5%);
+    color: $text-color;
+  }
+  
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    
+    &:hover {
+      background-color: $bg-color;
+      color: $text-color;
+    }
+  }
+} 

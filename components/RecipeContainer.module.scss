@@ -1,0 +1,51 @@
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 1.2rem;
+  color: $text-color;
+}
+
+.errorContainer,
+.emptyContainer {
+  background-color: $card-bg;
+  padding: $spacing-xl;
+  border-radius: $border-radius-md;
+  box-shadow: $box-shadow;
+  text-align: center;
+}
+
+.errorMessage {
+  color: $error-color;
+  font-size: 1.1rem;
+  margin-bottom: $spacing-lg;
+}
+
+.emptyContainer {
+  h2 {
+    margin-bottom: $spacing-md;
+    color: $text-color;
+  }
+  
+  p {
+    margin-bottom: $spacing-lg;
+    color: $text-color;
+  }
+}
+
+.backButton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: $primary;
+  color: $card-bg;
+  border: none;
+  border-radius: $border-radius-sm;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  
+  &:hover {
+    background-color: $primary-dark;
+  }
+} 

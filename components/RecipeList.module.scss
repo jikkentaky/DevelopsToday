@@ -1,0 +1,35 @@
+.container {
+  margin-bottom: $spacing-xl;
+}
+
+.title {
+  font-size: 1.75rem;
+  margin-bottom: $spacing-lg;
+  color: $text-color;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: $spacing-lg;
+  
+  @media (min-width: $breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.noResults {
+  padding: $spacing-lg;
+  background-color: $card-bg;
+  border-radius: $border-radius-md;
+  text-align: center;
+  color: $text-color;
+} 
